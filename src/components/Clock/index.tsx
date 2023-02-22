@@ -1,4 +1,5 @@
 import React from 'react';
+import ClockNumbers from '~/components/ClockNumbers';
 import Hour from '~/components/Hour';
 import Minute from '~/components/Minute';
 import Second from '~/components/Second';
@@ -21,6 +22,7 @@ const Clock = () => {
   return (
     <Tooltip text={timeText} direction="top-right">
       <div className="clock relative">
+        <ClockNumbers />
         <Hour />
         <Minute />
         <Second />
