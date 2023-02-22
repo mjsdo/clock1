@@ -1,0 +1,7 @@
+.clock-hand {
+  width: 1px;
+  height: calc(var(--clock-width) / 2);
+  background-color: black;
+  transform-origin: bottom;
+  transition: transform 200ms;
+}
