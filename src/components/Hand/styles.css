@@ -2,10 +2,18 @@
   width: 1px;
   height: calc(var(--clock-width) / 2);
   background-color: black;
-  transform-origin: bottom;
+  transform-origin: top;
   transition: transform 200ms;
 }
 
 .no-transition {
   transition: none !important;
+}
+
+.hand-container {
+  transform-origin: top;
+  transform: rotateX(180deg) rotateY(180deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }

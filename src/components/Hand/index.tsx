@@ -18,7 +18,7 @@ const Hand: FC<HandProps> = ({ className = '', degree }) => {
   const [init, setInit] = useState(false);
   const style = init
     ? initialStyle
-    : { transform: `rotate(${degree || 360}deg)` };
+    : { transform: `rotateZ(${degree || 360}deg)` };
 
   const initializeDegree = async () => {
     await delay(100);

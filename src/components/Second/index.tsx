@@ -8,7 +8,7 @@ const Second = () => {
   const degree = getSecondHandDegree(second);
 
   return (
-    <div className="absolute x-center">
+    <div className="hand-container">
       <Hand degree={degree} />
     </div>
   );

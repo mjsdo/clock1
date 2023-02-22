@@ -8,7 +8,7 @@ const Hour = () => {
   const degree = getHourHandDegree({ hour, minute, second });
 
   return (
-    <div className="absolute x-center">
+    <div className="hand-container">
       <Hand degree={degree} />
     </div>
   );
