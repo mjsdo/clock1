@@ -5,3 +5,7 @@
   transform-origin: bottom;
   transition: transform 200ms;
 }
+
+.no-transition {
+  transition: none !important;
+}
