@@ -9,7 +9,7 @@ const Second = () => {
 
   return (
     <div className="hand-container">
-      <Hand degree={degree} />
+      <Hand degree={degree} className="second-hand" />
     </div>
   );
 };

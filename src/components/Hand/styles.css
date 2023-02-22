@@ -17,3 +17,15 @@
   top: 50%;
   left: 50%;
 }
+
+.hour-hand {
+  width: 5px;
+  height: calc(var(--clock-width) / 2.5);
+  background-color: red;
+}
+
+.minute-hand {
+  width: 2px;
+  height: calc(var(--clock-width) / 2.25);
+  background-color: blue;
+}

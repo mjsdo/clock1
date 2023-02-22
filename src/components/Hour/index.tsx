@@ -9,7 +9,7 @@ const Hour = () => {
 
   return (
     <div className="hand-container">
-      <Hand degree={degree} />
+      <Hand degree={degree} className="hour-hand" />
     </div>
   );
 };
