@@ -2,7 +2,8 @@ import React from 'react';
 import Hour from '~/components/Hour';
 import Minute from '~/components/Minute';
 import Second from '~/components/Second';
-import { useAppDispatch } from '~/hooks/redux';
+import Tooltip from '~/components/Tooltip';
+import { useAppDispatch, useAppSelector } from '~/hooks/redux';
 import useInterval from '~/hooks/useInterval';
 import { updateTime } from '~/store/clockSlice';
 
@@ -10,17 +11,21 @@ import './styles.css';
 
 const Clock = () => {
   const dispatch = useAppDispatch();
+  const { hour, minute, second } = useAppSelector(({ clock }) => clock);
+  const timeText = `${hour}:${minute}:${second}`;
 
   useInterval(() => {
     dispatch(updateTime());
   }, 1000);
 
   return (
-    <div className="clock relative">
-      <Hour />
-      <Minute />
-      <Second />
-    </div>
+    <Tooltip text={timeText} direction="top-right">
+      <div className="clock relative">
+        <Hour />
+        <Minute />
+        <Second />
+      </div>
+    </Tooltip>
   );
 };
 
