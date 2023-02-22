@@ -1,0 +1,6 @@
+.clock {
+  width: var(--clock-width);
+  height: var(--clock-width);
+  border: 2px solid black;
+  border-radius: 50%;
+}

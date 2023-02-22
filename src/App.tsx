@@ -1,11 +1,16 @@
-import '~/App.css';
+import { Provider } from 'react-redux';
 import Clock from '~/components/Clock';
+import { store } from '~/store';
+
+import '~/App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Clock />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Clock />
+      </div>
+    </Provider>
   );
 }
 

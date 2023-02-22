@@ -19,3 +19,26 @@ button {
 strong {
   font-weight: normal;
 }
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  --clock-width: 500px;
+}
+
+/* utility class */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.x-center {
+  left: 50%;
+}
